@@ -12,7 +12,7 @@
 }
 
 .inactive {
-  font-weight: lighter;
+  font-weight: bold; /*lighter*/
   fill: #c9c9c9;
   transition: fill 0.3s ease-out;
   text-anchor: middle;
@@ -40,7 +40,7 @@
   margin: 0;
 }
 
-.d3-tip {
+.tooltip {
   padding: 6px;
   font-size: 12px;
   line-height: 1;
@@ -48,8 +48,14 @@
   color: #fff;
   text-align: center;
   text-transform: capitalize;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 4px;
+  pointer-events: none;
+}
+
+.state_abbr {
+  font-size: 9px;
+  font-weight: bold;
 }
 
 /* Mobile Rules */
